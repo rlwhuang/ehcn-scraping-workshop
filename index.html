@@ -1019,7 +1019,8 @@
           title.textContent = `URL: ${image.url}`;
           const description = document.createElement('p');
           description.textContent = `Timestamp: ${image.timestamp}`;
-
+          description.textContent += `<br>`;
+          description.textContent += `MD5: ${image.md5}`;
           imageGallery.appendChild(title);
           imageGallery.appendChild(description);
 
